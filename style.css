@@ -1,0 +1,192 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  display: block;
+}
+
+.sidebar-logo {
+  display: none;
+}
+
+.navbar-logo {
+  display: block;
+  font-size: 15px;
+}
+
+.navbar-text {
+  display: none;
+  font-size: 20px;
+}
+
+.sidebar-profile {
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 0.7rem;
+}
+
+.sidebar-profile > img {
+  padding: 0;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .sidebar-logo {
+    display: block;
+  }
+
+  .navbar-logo {
+    display: none;
+  }
+
+  .navbar-text {
+    display: block;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+/* arrow */
+
+.arrow-left {
+  border-radius: 0px 50% 50% 0;
+  color: wheat;
+  width: 30px;
+  /* width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+
+  border-left: 30px solid blueviolet; */
+}
+
+.bg-purple {
+  background-color: blueviolet;
+}
+.project-nav-link {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.project-card-new {
+  background-color: rgba(138, 43, 226, 0.2);
+  border-color: rgba(138, 43, 226, 0.2);
+}
+
+.project-card-new-label {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 13px;
+  padding: 0 10px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+}
+
+.project-card {
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: rgba(138, 43, 226, 0.2);
+}
+
+.project-card-redo-label {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: 13px;
+  padding: 0 10px;
+  background-color: #ff5349;
+  color: white;
+  font-weight: bold;
+}
+
+.project-nav-pills > li > a {
+  /* font-size: 15px; */
+  color: black !important;
+}
+
+.project-nav-pills > li > a.active {
+  color: blueviolet !important;
+}
+
+.project-lab-link {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.project-lab-link:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.btn-project-submit {
+  color: white;
+  font-weight: bold;
+  background-color: #ff5349;
+}
+
+.btn-project-submit:hover {
+  color: white;
+  font-weight: bold;
+  background-color: #ff5349;
+}
+
+.btn-project-details {
+  color: rgba(138, 43, 226, 1);
+  font-size: 17px !important;
+  padding: 0 !important;
+  text-decoration: none;
+}
+
+.btn-project-details:hover {
+  color: rgba(138, 43, 226, 0.9);
+  font-size: 17px !important;
+  padding: 0 !important;
+  text-decoration: none;
+}

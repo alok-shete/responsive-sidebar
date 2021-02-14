@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Sidebar</title>
+  </head>
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-purple border-right" id="sidebar-wrapper">
+        <div class="list-group">
+          <!-- sidebar logo -->
+
+          <nav class="navbar navbar-light bg-light sidebar-logo p-0">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://4.bp.blogspot.com/-gHJR9huX1gA/XMFjvFn4F_I/AAAAAAAAACQ/RztjOZh4mGkSKVglXRJTr3qQF6DCvF1IwCK4BGAYYCw/s1600/1556177756466.png"
+                alt=""
+                height="46"
+                width="190rem"
+                class="d-inline-block align-top navbar-logo"
+              />
+            </a>
+          </nav>
+          <!-- side bar logo end -->
+          <!-- sidebar profile -->
+          <div class="text-center sidebar-profile">
+            <img
+              src="https://1.bp.blogspot.com/-riffAYxXLJc/XPpjM6FmcUI/AAAAAAAAAXQ/Ld-SrFfLBAMv4FmRzgFyhfZ8vu4WktcJACEwYBhgL/s320/1542114335598.jpg"
+              class="img-thumbnail"
+              alt="..."
+            />
+          </div>
+          <!-- sidebar profile end -->
+          <!-- student name -->
+          <div class="text-center">
+            <span class="text-white">Alok Shete</span>
+          </div>
+          <!-- student name end -->
+
+          <!-- side nav item -->
+
+          <nav class="nav flex-column mt-4 mb-5 ml-4">
+            <a class="text-white nav-link active" href="#"
+              ><b>Student rewards</b></a
+            >
+            <a class="text-white nav-link" href="#"><b>Student progress</b></a>
+            <a class="text-white nav-link" href="#"><b>Cancelled classes</b></a>
+            <a class="text-white nav-link" href="#"><b>Completed classes</b></a>
+          </nav>
+
+          <!-- side nav item end -->
+
+          <!-- statistics -->
+          <div class="bg-white ml-2 mr-2" style="height: 2px"></div>
+          <div class="p-4 text-white">
+            <p>Dear Student, you have booked the intermediate course</p>
+            <table width="100%">
+              <tr>
+                <td width="80%">Classes attended:</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Classes left:</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>Total classes:</td>
+                <td>32</td>
+              </tr>
+            </table>
+          </div>
+          <div class="text-center mb-4">
+            <button class="btn btn-danger">Book more classes</button>
+          </div>
+
+          <!-- statistics end -->
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <!-- top nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand navbar-logo" href="#">
+            <img
+              src="https://4.bp.blogspot.com/-gHJR9huX1gA/XMFjvFn4F_I/AAAAAAAAACQ/RztjOZh4mGkSKVglXRJTr3qQF6DCvF1IwCK4BGAYYCw/s1600/1556177756466.png"
+              alt=""
+              height="35"
+              class="d-inline-block align-top"
+            />
+          </a>
+          <b>Student's DashBoard</b>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item pr-3">
+                <a class="nav-link" href="#">Help Center & F.A.Q</a>
+              </li>
+              <li class="nav-item pr-3">
+                <a class="nav-link" href="#">Logout</a>
+              </li>
+              <li class="nav-item text-center">
+                <a
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    font-size: 17px;
+                    font-weight: bold;
+                  "
+                  class="nav-link bg-dark text-white"
+                  href="#"
+                >
+                  A
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- top nav bar end -->
+        <div id="menu-toggle" class="bg-purple arrow-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-filter-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </div>
+
+        <style>
+          .nav-scroll {
+            white-space: nowrap;
+            display: block !important;
+            flex-wrap: nowrap;
+            max-width: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+          }
+
+          .nav-scroll li {
+            display: inline-block;
+          }
+
+          @media (min-width: 768px) {
+            .nav-scroll {
+              overflow-x: auto;
+            }
+          }
+
+          #main {
+            height: 105vh;
+          }
+
+          .main-nav > li > a {
+            text-transform: uppercase;
+            color: black !important;
+            font-weight: bold;
+          }
+
+          .main-nav > li > a.active {
+            background: linear-gradient(to top, orangered 8%, transparent 0);
+          }
+        </style>
+
+        <div
+          class="container-fluid"
+          id="main"
+          style="background-color: rgba(138, 43, 226, 0.2)"
+        >
+          <ul
+            class="nav nav-scroll nav-tabs main-nav"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                onclick="change_tab('upcoming-classes-tab')"
+              >
+                Upcoming classes
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                onclick="change_tab('projects-tab')"
+              >
+                Projects
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                onclick="change_tab('schedule-a-class-tab')"
+              >
+                Schedule A Class
+              </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                onclick="change_tab('cancel-class-tab')"
+              >
+                Cancel class
+              </a>
+            </li>
+          </ul>
+          <!-- content  -->
+          <!-- project -->
+          <div
+            id="projects-tab"
+            style="display: none"
+            class="all-tabs rounded bg-white mt-3 pt-2 pb-2"
+          >
+            <ul
+              class="nav nav-scroll project-nav-pills"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item border-right border-dark">
+                <a
+                  class="nav-link project-nav-link active"
+                  id="all-project-tab"
+                  data-toggle="tab"
+                  href="#all-project"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                >
+                  All Projects
+                </a>
+              </li>
+              <li class="nav-item border-right border-dark">
+                <a
+                  class="nav-link project-nav-link"
+                  id="new-project-tab"
+                  data-toggle="tab"
+                  href="#new-project"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >New Projects</a
+                >
+              </li>
+              <li class="nav-item border-right border-dark">
+                <a
+                  class="nav-link project-nav-link"
+                  id="project-changes-tab"
+                  data-toggle="tab"
+                  href="#project-changes"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Project Changes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link project-nav-link"
+                  id="completed-project-tab"
+                  data-toggle="tab"
+                  href="#completed-project"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Completed Projects</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <!-- all Project -->
+              <div
+                class="tab-pane fade show active m-3"
+                id="all-project"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <!-- new project -->
+                <div class="card project-card-new mb-3">
+                  <div class="project-card-new-label">NEW</div>
+                  <div class="card-body">
+                    <div class="row mt-2">
+                      <div class="col-sm-2">
+                        <p><b>19/1/21</b></p>
+                        <img
+                          src="https://www.hdwallpapers.in/thumbs/2021/spiderman_night_mask_4k_5k_hd_superheroes-t1.jpg"
+                          class="img-fluid"
+                          alt="Responsive image"
+                        />
+                        <div class="mt-2">
+                          <a href="">Go to project lab</a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <p><b>Project Name</b></p>
+                        <small>
+                          Project description: Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Integer nec odio.
+                          Praesent libero. Sed cursus ante dapibus diam. Sed
+                          nisi. Nulla quis sem at nibh elementum imperdiet. Duis
+                          sagittis ipsum. Praesent mauris. Fusce nec tellus sed
+                          augue semper porta. Vestibulum lacinia arcu eget
+                          nulla. Class aptent taciti sociosqu ad litora torquent
+                          per conubia nostra, per inceptos himenaeos.
+                        </small>
+                        <div class="mt-2">
+                          <a href=""><b>View Hint</b></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 text-center align-self-center">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="paste project link here"
+                        />
+                        <button type="button" class="btn btn-success mt-3">
+                          Success
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- new project end -->
+                <!-- return project -->
+                <div class="card project-card">
+                  <div class="project-card-redo-label">REDO</div>
+                  <div class="card-body">
+                    <div class="row mt-2">
+                      <div class="col-sm-2">
+                        <p><b>19/1/21</b></p>
+                        <img
+                          src="https://www.hdwallpapers.in/thumbs/2021/spiderman_night_mask_4k_5k_hd_superheroes-t1.jpg"
+                          class="img-fluid"
+                          alt="Responsive image"
+                        />
+                        <div class="mt-2">
+                          <a href="">Go to project lab</a>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <p><b>Project Name</b></p>
+                        <small>
+                          Project description: Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit. Integer nec odio.
+                          Praesent libero. Sed cursus ante dapibus diam. Sed
+                          nisi. Nulla quis sem at nibh elementum imperdiet. Duis
+                          sagittis ipsum. Praesent mauris. Fusce nec tellus sed
+                          augue semper porta. Vestibulum lacinia arcu eget
+                          nulla. Class aptent taciti sociosqu ad litora torquent
+                          per conubia nostra, per inceptos himenaeos.
+                        </small>
+                        <div class="mt-2">
+                          <a href=""><b>View Hint</b></a>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 text-center align-self-center">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="paste project link here"
+                        />
+                        <button type="button" class="btn btn-success mt-3">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- return project end -->
+              </div>
+              <!-- all project end -->
+              <div
+                class="tab-pane fade"
+                id="new-project"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                b
+              </div>
+              <div
+                class="tab-pane fade"
+                id="project-changes"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                c
+              </div>
+              <div
+                class="tab-pane fade"
+                id="completed-project"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                d
+              </div>
+            </div>
+          </div>
+          <!-- project end -->
+
+          <!-- content end -->
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- whatsapp gmail contact  -->
+    <style>
+      div.fixed {
+        position: fixed;
+        bottom: 3vh;
+        right: 10px;
+      }
+
+      .img-contact {
+        margin: 8px;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+      }
+
+      .img-contact:hover {
+        filter: contrast(200%);
+        cursor: pointer;
+        animation-name: bounce;
+        -moz-animation-name: bounce;
+      }
+
+      @keyframes bounce {
+        0%,
+        100%,
+        20%,
+        50%,
+        80% {
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -webkit-transform: translateY(-20px);
+          -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+        }
+        60% {
+          -webkit-transform: translateY(-10px);
+          -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+
+    <div class="fixed">
+      <div>
+        <a
+          target="_blank"
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=support@code-gurukul.com&tf=1"
+        >
+          <img
+            class="img-contact"
+            src="./gmail_icon.png"
+            alt=""
+            width="40vw"
+            srcset=""
+          />
+        </a>
+      </div>
+
+      <div>
+        <a target="_blank" href="https://wa.me/917506262683">
+          <img
+            class="img-contact"
+            src="./whatsapp.png"
+            alt=""
+            width="39vw"
+            srcset=""
+          />
+        </a>
+      </div>
+    </div>
+    <!--  -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+
+      $("#main").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").removeClass("toggled");
+      });
+
+      function change_tab(tab_name) {
+        console.log(tab_name + " clicked");
+        $(".all-tabs").fadeOut("slow");
+        $("#" + tab_name).fadeIn("slow");
+      }
+    </script>
+  </body>
+</html>

@@ -24,9 +24,20 @@
       <div class="bg-purple border-right" id="sidebar-wrapper">
         <div class="list-group">
           <!-- sidebar logo -->
+          <div class="bg-light sidebar-logo">
+            <img
+              src="https://4.bp.blogspot.com/-gHJR9huX1gA/XMFjvFn4F_I/AAAAAAAAACQ/RztjOZh4mGkSKVglXRJTr3qQF6DCvF1IwCK4BGAYYCw/s1600/1556177756466.png"
+              class="img-fluid"
+              alt="..."
+            />
+            <!-- <img
+              src="https://4.bp.blogspot.com/-gHJR9huX1gA/XMFjvFn4F_I/AAAAAAAAACQ/RztjOZh4mGkSKVglXRJTr3qQF6DCvF1IwCK4BGAYYCw/s1600/1556177756466.png"
+              alt="..."
+              class="img-responsive center-block"
+              height="56"
+            /> -->
 
-          <nav class="navbar navbar-light bg-light sidebar-logo p-0">
-            <a class="navbar-brand" href="#">
+            <!-- <a class="" href="#">
               <img
                 src="https://4.bp.blogspot.com/-gHJR9huX1gA/XMFjvFn4F_I/AAAAAAAAACQ/RztjOZh4mGkSKVglXRJTr3qQF6DCvF1IwCK4BGAYYCw/s1600/1556177756466.png"
                 alt=""
@@ -34,8 +45,8 @@
                 width="190rem"
                 class="d-inline-block align-top navbar-logo"
               />
-            </a>
-          </nav>
+            </a> -->
+          </div>
           <!-- side bar logo end -->
           <!-- sidebar profile -->
           <div class="text-center sidebar-profile">
@@ -96,7 +107,7 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
         <!-- top nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
           <a class="navbar-brand navbar-logo" href="#">
             <img
               src="https://4.bp.blogspot.com/-gHJR9huX1gA/XMFjvFn4F_I/AAAAAAAAACQ/RztjOZh4mGkSKVglXRJTr3qQF6DCvF1IwCK4BGAYYCw/s1600/1556177756466.png"
@@ -126,17 +137,7 @@
                 <a class="nav-link" href="#">Logout</a>
               </li>
               <li class="nav-item text-center">
-                <a
-                  style="
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    font-size: 17px;
-                    font-weight: bold;
-                  "
-                  class="nav-link bg-dark text-white"
-                  href="#"
-                >
+                <a class="nav-link bg-dark text-white text-logo" href="#">
                   A
                 </a>
               </li>
@@ -144,7 +145,7 @@
           </div>
         </nav>
         <!-- top nav bar end -->
-        <div style="background-color: rgba(138, 43, 226, 0.2); width: 100%">
+        <div class="toggle-div">
           <div id="menu-toggle" class="bg-purple arrow-left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -161,47 +162,7 @@
           </div>
         </div>
 
-        <style>
-          .nav-scroll {
-            white-space: nowrap;
-            display: block !important;
-            flex-wrap: nowrap;
-            max-width: 100%;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            -webkit-overflow-scrolling: touch;
-          }
-
-          .nav-scroll li {
-            display: inline-block;
-          }
-
-          @media (min-width: 768px) {
-            .nav-scroll {
-              overflow-x: auto;
-            }
-          }
-
-          #main {
-            min-height: 105vh;
-          }
-
-          .main-nav > li > a {
-            text-transform: uppercase;
-            color: black !important;
-            font-weight: bold;
-          }
-
-          .main-nav > li > a.active {
-            background: linear-gradient(to top, orangered 8%, transparent 0);
-          }
-        </style>
-
-        <div
-          class="container-fluid"
-          id="main"
-          style="background-color: rgba(138, 43, 226, 0.2)"
-        >
+        <div class="container-fluid" id="main">
           <ul
             class="nav nav-scroll nav-tabs main-nav"
             id="myTab"
@@ -373,7 +334,7 @@
                           placeholder="paste project link here"
                         />
                         <button type="button" class="btn btn-success mt-3">
-                          Success
+                          Submit
                         </button>
                       </div>
                     </div>
@@ -464,54 +425,6 @@
     <!-- /#wrapper -->
 
     <!-- whatsapp gmail contact  -->
-    <style>
-      div.fixed {
-        position: fixed;
-        bottom: 3vh;
-        right: 10px;
-      }
-
-      .img-contact {
-        margin: 8px;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-timing-function: ease-in-out;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-      }
-
-      .img-contact:hover {
-        filter: contrast(200%);
-        cursor: pointer;
-        animation-name: bounce;
-        -moz-animation-name: bounce;
-      }
-
-      @keyframes bounce {
-        0%,
-        100%,
-        20%,
-        50%,
-        80% {
-          -webkit-transform: translateY(0);
-          -ms-transform: translateY(0);
-          transform: translateY(0);
-        }
-        40% {
-          -webkit-transform: translateY(-20px);
-          -ms-transform: translateY(-20px);
-          transform: translateY(-20px);
-        }
-        60% {
-          -webkit-transform: translateY(-10px);
-          -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
-        }
-      }
-    </style>
 
     <div class="fixed">
       <div>
@@ -541,7 +454,7 @@
         </a>
       </div>
     </div>
-    <!--  -->
+    <!-- whatsapp gmail contact end  -->
     <!-- Bootstrap Bundle with Popper -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
